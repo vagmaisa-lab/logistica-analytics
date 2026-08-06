@@ -1,0 +1,122 @@
+{
+    "by_cd_name": {
+        "CD1": {
+            "quadro": 645,
+            "elegiveis": 208,
+            "contemplados": 114,
+            "total_pago": 3915.6574999999984
+        },
+        "CD4": {
+            "quadro": 290,
+            "elegiveis": 79,
+            "contemplados": 36,
+            "total_pago": 725.3999999999997
+        },
+        "CD2": {
+            "quadro": 183,
+            "elegiveis": 54,
+            "contemplados": 40,
+            "total_pago": 818.7400000000001
+        },
+        "CDRJ": {
+            "quadro": 14,
+            "elegiveis": 8,
+            "contemplados": 6,
+            "total_pago": 340.75
+        },
+        "CDC-E": {
+            "quadro": 23,
+            "elegiveis": 8,
+            "contemplados": 7,
+            "total_pago": 504.85
+        },
+        "CDD-F": {
+            "quadro": 65,
+            "elegiveis": 26,
+            "contemplados": 24,
+            "total_pago": 833.48
+        }
+    },
+    "top_10": [
+        {
+            "Matr\u00edcula": 5690005,
+            "Nome": "Nelson Henrique Gomes Alves",
+            "Produ\u00e7\u00e3o": 246.68,
+            "Valor": 244.39000000000001,
+            "CD": "1942",
+            "CD_Name": "CD1"
+        },
+        {
+            "Matr\u00edcula": 5954894,
+            "Nome": "Vitor Manoel De Araujo",
+            "Produ\u00e7\u00e3o": 311.91999999999996,
+            "Valor": 230.9475,
+            "CD": "1942",
+            "CD_Name": "CD1"
+        },
+        {
+            "Matr\u00edcula": 5517508,
+            "Nome": "Jhonathan Lucas Dantas Guedes",
+            "Produ\u00e7\u00e3o": 194.08,
+            "Valor": 193.76000000000002,
+            "CD": "1942",
+            "CD_Name": "CD1"
+        },
+        {
+            "Matr\u00edcula": 5902932,
+            "Nome": "Lutatala Sebastiao Simao Ndombaxi",
+            "Produ\u00e7\u00e3o": 170.48,
+            "Valor": 168.91,
+            "CD": "7801",
+            "CD_Name": "CDD-F"
+        },
+        {
+            "Matr\u00edcula": 5665884,
+            "Nome": "Leandro De Oliveira Rocha",
+            "Produ\u00e7\u00e3o": 165.08,
+            "Valor": 165.08,
+            "CD": "1942",
+            "CD_Name": "CD1"
+        },
+        {
+            "Matr\u00edcula": 5854822,
+            "Nome": "SONITA ASHU",
+            "Produ\u00e7\u00e3o": 206.94,
+            "Valor": 155.20499999999998,
+            "CD": "1965",
+            "CD_Name": "CD1"
+        },
+        {
+            "Matr\u00edcula": 5941075,
+            "Nome": "Eduardo Cecilio Sizilio",
+            "Produ\u00e7\u00e3o": 149.23999999999998,
+            "Valor": 149.10999999999999,
+            "CD": "1942",
+            "CD_Name": "CD1"
+        },
+        {
+            "Matr\u00edcula": 5570735,
+            "Nome": "Alef Bruno Rodrigues Marques",
+            "Produ\u00e7\u00e3o": 151.72,
+            "Valor": 147.68,
+            "CD": "1974",
+            "CD_Name": "CDRJ"
+        },
+        {
+            "Matr\u00edcula": 5864720,
+            "Nome": "Charles Deodato Da Costa Lima",
+            "Produ\u00e7\u00e3o": 141.36,
+            "Valor": 141.36,
+            "CD": "1942",
+            "CD_Name": "CD1"
+        },
+        {
+            "Matr\u00edcula": 5984971,
+            "Nome": "Vagner Silvano Souza Junior",
+            "Produ\u00e7\u00e3o": 130.2,
+            "Valor": 130.2,
+            "CD": "7801",
+            "CD_Name": "CDD-F"
+        }
+    ]
+}

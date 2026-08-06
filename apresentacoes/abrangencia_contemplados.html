@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Open Sans', sans-serif;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Decorative curves */
+        .curve-top { position: absolute; top: -50px; left: -50px; width: 400px; height: 200px; background: linear-gradient(135deg, #003366 0%, #8a2be2 100%); border-radius: 50%; opacity: 0.8; z-index: 1; }
+        .curve-bottom { position: absolute; bottom: -80px; right: -50px; width: 450px; height: 250px; background: linear-gradient(135deg, #003366 0%, #00aaff 100%); border-radius: 50%; opacity: 0.2; z-index: 1; }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 40px 40px 8px; /* kept top padding (40px) intact */
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title-section { margin-bottom: 12px; }
+
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 38px;
+            color: #003366;
+            margin-bottom: 5px;
+        }
+
+        .sub-message {
+            font-size: 16px;
+            color: #666;
+            border-left: 4px solid #8a2be2;
+            padding-left: 12px;
+            max-width: 1000px;
+            line-height: 1.3;
+        }
+
+        /* Layout refreshed: two columns to reduce vertical height */
+        .tables-wrapper {
+            display: flex;
+            flex-direction: row; /* changed to row */
+            gap: 18px;
+            margin-top: 12px;
+            align-items: flex-start;
+        }
+
+        .section-box {
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 8px 10px; /* slightly reduced inner padding */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            border: 1px solid #f0f0f0;
+            width: 48%; /* two columns */
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            color: #003366;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+
+        th {
+            text-align: left;
+            padding: 6px 8px;
+            border-bottom: 2px solid #003366;
+            color: #003366;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 5px 8px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        tr:nth-child(even) { background-color: #fafafa; }
+
+        .val-col { font-weight: 700; color: #003366; text-align: right; }
+        .center-col { text-align: center; }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 12px;
+            padding-bottom: 10px;
+        }
+
+        .methodology { font-size: 10px; color: #999; max-width: 800px; line-height: 1.2; }
+        
+        .logo-gpa { text-align: right; }
+        .logo-text-main { font-size: 24px; font-weight: 800; color: #003366; letter-spacing: -1px; line-height: 1; }
+        .logo-text-sub { font-size: 9px; color: #003366; text-transform: uppercase; }
+        .logo-icon { display: inline-block; width: 25px; height: 12px; background: linear-gradient(to right, #003366, #8a2be2); border-radius: 8px 8px 0 0; margin-bottom: -4px; }
+
+        /* Ensure tables don't force additional vertical spacing */
+        .section-box table thead th, .section-box table tbody td { white-space: nowrap; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="curve-top"></div>
+        <div class="curve-bottom"></div>
+
+        <div class="content">
+            <div class="title-section">
+                <h1 class="main-title">Abrangência e Contemplados por Unidade</h1>
+                <p class="sub-message">O piloto atingiu 51,9% de aderência média, com destaque para a performance do CD1 e CDD-F, totalizando 240 colaboradores contemplados na operação.</p>
+            </div>
+
+            <div class="tables-wrapper">
+                <!-- Tabela Resumo por CD -->
+                <div class="section-box">
+                    <h2 class="section-title"><i class="fas fa-warehouse"></i> Resumo por Centro de Distribuição (CD)</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Unidade</th>
+                                <th class="center-col">Quadro Total</th>
+                                <th class="center-col">Elegíveis</th>
+                                <th class="center-col">Contemplados</th>
+                                <th class="center-col">Aderência</th>
+                                <th style="text-align: right;">Total Pago</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>CD1</strong></td><td class="center-col">645</td><td class="center-col">208</td><td class="center-col">114</td><td class="center-col">54,8%</td><td class="val-col">R$ 3.915,66</td></tr>
+                            <tr><td><strong>CD4</strong></td><td class="center-col">290</td><td class="center-col">79</td><td class="center-col">36</td><td class="center-col">45,6%</td><td class="val-col">R$ 725,40</td></tr>
+                            <tr><td><strong>CD2</strong></td><td class="center-col">183</td><td class="center-col">54</td><td class="center-col">40</td><td class="center-col">74,1%</td><td class="val-col">R$ 818,74</td></tr>
+                            <tr><td><strong>CDRJ</strong></td><td class="center-col">14</td><td class="center-col">8</td><td class="center-col">6</td><td class="center-col">75,0%</td><td class="val-col">R$ 340,75</td></tr>
+                            <tr><td><strong>CDC-E</strong></td><td class="center-col">23</td><td class="center-col">8</td><td class="center-col">7</td><td class="center-col">87,5%</td><td class="val-col">R$ 504,85</td></tr>
+                            <tr><td><strong>CDD-F</strong></td><td class="center-col">65</td><td class="center-col">26</td><td class="center-col">24</td><td class="center-col">92,3%</td><td class="val-col">R$ 833,48</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Tabela Ranking Top 10 -->
+                <div class="section-box">
+                    <h2 class="section-title"><i class="fas fa-trophy"></i> Ranking Geral: Top 10 Contemplados</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Matrícula</th>
+                                <th>Nome do Colaborador</th>
+                                <th class="center-col">CD</th>
+                                <th class="center-col">Produção</th>
+                                <th style="text-align: right;">Valor Recebido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>5954894</td><td>Vitor Manoel De Araujo</td><td class="center-col">CD1</td><td class="center-col">392,16</td><td class="val-col">R$ 310,23</td></tr>
+                            <tr><td>5517508</td><td>Jhonathan Lucas Dantas Guedes</td><td class="center-col">CD1</td><td class="center-col">277,32</td><td class="val-col">R$ 272,95</td></tr>
+                            <tr><td>5690005</td><td>Nelson Henrique Gomes Alves</td><td class="center-col">CD1</td><td class="center-col">246,68</td><td class="val-col">R$ 244,39</td></tr>
+                            <tr><td>5665884</td><td>Leandro De Oliveira Rocha</td><td class="center-col">CD1</td><td class="center-col">248,12</td><td class="val-col">R$ 234,94</td></tr>
+                            <tr><td>5941075</td><td>Eduardo Cecilio Sizilio</td><td class="center-col">CD1</td><td class="center-col">219,52</td><td class="val-col">R$ 219,39</td></tr>
+                            <tr><td>5940427</td><td>Gabriel Da Silva Sousa</td><td class="center-col">CD1</td><td class="center-col">204,44</td><td class="val-col">R$ 204,44</td></tr>
+                            <tr><td>5954932</td><td>Jeferson Rodrigues Dos Santos</td><td class="center-col">CD1</td><td class="center-col">186,84</td><td class="val-col">R$ 186,84</td></tr>
+                            <tr><td>5816220</td><td>Matheus Oliveira Da Silva</td><td class="center-col">CD1</td><td class="center-col">185,20</td><td class="val-col">R$ 185,20</td></tr>
+                            <tr><td>5954940</td><td>Jose Lucas Da Silva De Lima</td><td class="center-col">CD1</td><td class="center-col">179,52</td><td class="val-col">R$ 179,52</td></tr>
+                            <tr><td>5873917</td><td>Gabriel Bezerra Cavalcante</td><td class="center-col">CD1</td><td class="center-col">173,08</td><td class="val-col">R$ 173,08</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="methodology">
+                    * Base considera o quadro operacional da estrutura A até AG por CD. O pagamento respeitou os critérios de produtividade, qualidade, segurança e disciplina definidos no regulamento do piloto.
+                </div>
+                <div class="logo-gpa">
+                    <div class="logo-icon"></div>
+                    <div class="logo-text-main">GPA</div>
+                    <div class="logo-text-sub">Grupo Pão de Açúcar</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
